@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v == btnStart){
 
         }else  if (v == btnStop){
-            
+
         }
 
     }
