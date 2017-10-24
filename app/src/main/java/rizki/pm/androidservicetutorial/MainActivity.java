@@ -1,5 +1,6 @@
 package rizki.pm.androidservicetutorial;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v == btnStart){
 
+            //starting service
+            startService(new Intent(this, MyService.class));
+
         }else  if (v == btnStop){
+
+            //stopping service
+            stopService(new Intent(this, MyService.class));
 
         }
 
